@@ -7,12 +7,7 @@ terraform {
       version = "~> 4.70.0"
     }
   }
-  backend "azurerm" {
-    resource_group_name  = "rg-crc2026-student-206-lab"
-    storage_account_name = "synapssatf"
-    container_name       = "terraform"
-    key                  = "terraform_new.tfstate"
-  }
+  backend "azurerm" {}
 }
 
 provider "azurerm" {
